@@ -1,0 +1,122 @@
+
+
+
+*{
+  font-family:sans-serif;
+}
+
+/* .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+} */
+.project .card{
+    height: 40%;
+    width: 30%;
+    gap: 1%;
+    margin: 1rem;
+    box-shadow:0 0 10px black ;
+    
+    /* border-radius: 20px; */
+}
+@media screen and (max-screen:768px) {
+  .project .card{
+    display: contents;
+    height: 40%;
+    width: 30%;
+    gap: 1%;
+    margin: 1rem;
+    box-shadow:0 0 10px black ;
+  }
+}
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.animebtn.pulse{
+  animation: pulse 0.5s ease;
+
+}
+.animebtn{
+  cursor: pointer;
+}
+
+.edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+#eduitem{
+    padding: 12px;
+    box-shadow:0 0 10px black ;
+    /* border: 4px solid black;
+    border-radius: 10px; */
+    margin: 25px;
+    height: 24rem;
+    width: 28rem;
+    overflow-y: scroll;
+    
+}
+
+  /* contact me page  */
+  .contactme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    
+   
+  }
+  .contactme .contactform{
+    width: 40%;
+    height:40%;
+    border-radius: 15px;
+    /* margin: 70px; */
+    background-color: rgb(240, 236, 236);
+    box-shadow:0 0 10px black ;
+    padding: 50px;
+    font-size: 25px;
+    display: flex;
+    overflow:auto;
+    /* flex-basis: 200; */
+  }
+
+  .contactform input{
+    box-shadow:0 0 10px black ;
+  }
+  .contactform textarea{
+    box-shadow:0 0 10px black ;
+  }
+
+  .contactme .contactdet{
+    width:50%;
+    height:40%;
+    align-items:baseline;
+    border-radius: 15px;
+    /* margin: 70px; */
+    box-shadow:0 0 10px black ;
+    font-size: 25px;
+    overflow: auto;
+    overflow-wrap:normal;
+    
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+
+
