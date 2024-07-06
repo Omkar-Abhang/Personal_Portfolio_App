@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -7,6 +7,14 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+  const[animate,setAnimate]=useState(false);
+
+  const handleClick=()=>{
+    setAnimate(true);
+    setTimeout(()=>setAnimate(false),300)
+  };
+
   return (
     <div className='p-1'>
       <nav className="navbar navbar-expand-lg bg-body-tertiary mb-2  bg-light text-dark " style={{ border: '3px solid black' }}>
@@ -40,7 +48,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="https://drive.google.com/file/d/1DjjeYvCFiMkw-dSV40j_XJiEAf1UxDyG/view?usp=drivesdk">
-          <button type="button" className="btn btn-primary">View Resume</button>
+          <button type="button" className={animate?"animated-button":''} onClick={handleClick}>View Resume</button>
           </Link>
         </div>
       </nav></div>

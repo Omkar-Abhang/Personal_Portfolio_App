@@ -5,6 +5,17 @@
   font-family:sans-serif;
 }
 
+/* navbar section  */
+
+.animated-button{
+  animation: buttonClick 1.6s forwards;
+}
+@keyframes buttonClick{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+
 /* skill section  */
 .skill-details{
   position: absolute;
@@ -47,7 +58,7 @@
     
     /* border-radius: 20px; */
 }
-@media screen and (max-screen:768px) {
+/* @media screen and (max-screen:768px) {
   .project .card{
     display: contents;
     height: 40%;
@@ -74,7 +85,7 @@
 }
 .animebtn{
   cursor: pointer;
-}
+} */
 
 .edu{
     display: flex;
