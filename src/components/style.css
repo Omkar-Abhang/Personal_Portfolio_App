@@ -41,6 +41,18 @@
   box-shadow: 10px 10px 20px #698a6c;
 }
 
+/* skill section  */
+.certificate .card{
+  height: 20%;
+    width: 25%;
+    gap: 1%;
+}
+.certificate .card:hover{
+transform:scale(1.02);
+box-shadow: 10px 10px 20px #698a6c;
+}
+
+
 
 /* .project{
     display: flex;
@@ -58,34 +70,7 @@
     
     /* border-radius: 20px; */
 }
-/* @media screen and (max-screen:768px) {
-  .project .card{
-    display: contents;
-    height: 40%;
-    width: 30%;
-    gap: 1%;
-    margin: 1rem;
-    box-shadow:0 0 10px black ;
-  }
-}
-@keyframes pulse{
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.1);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-.animebtn.pulse{
-  animation: pulse 0.5s ease;
 
-}
-.animebtn{
-  cursor: pointer;
-} */
 
 .edu{
     display: flex;

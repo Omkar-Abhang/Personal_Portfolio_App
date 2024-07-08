@@ -3,16 +3,17 @@ import videocard from '../images/videocard.png'
 import dark from '../images/dark.png'
 import portfolio from '../images/portfolio.png'
 import './style.css'
+
+import { Link } from 'react-router-dom'
 const Projects = () => {
 
-    // const [ispulsing, setIspulsing] = useState(false);
-    // const handleClick = () => {
-    //     setIspulsing(true);
-    // }
+    const [animate, setAnimate] = useState(false);
 
-    // const handleAnimationEnd = () => {
-    //     setIspulsing(false);
-    // }
+    const handleClick = () => {
+        setAnimate(true);
+        setTimeout(() => setAnimate(false),300)
+    };
+
 
 
     return (
@@ -31,8 +32,9 @@ const Projects = () => {
                             <br />
                             <hr /><strong>For developing this webapp I Use React.Js framework of Javascript.</strong>
                         </p>
-                        <center><a href="https://omkar-abhang.github.io/VideoCard/" className="btn btn-primary">Open Project</a>
-                        </center>
+                        <Link to="https://omkar-abhang.github.io/VideoCard/"> <center> <button className={animate ? "animated-button btn btn-primary" : ''} 
+                        onClick={handleClick}>Open Project</button> </center> </Link>
+
                     </div>
                 </div>
 
@@ -44,8 +46,9 @@ const Projects = () => {
                             <br />
                             <hr /><strong>For developing this webapp I Use React.Js framework of Javascript.</strong>
                         </p>
-                        <center><a href="https://omkar-abhang.github.io/Dark_Chuckels/" className="btn btn-primary">Open Project</a>
-                        </center>
+                        <Link to="https://omkar-abhang.github.io/Dark_Chuckels/"><center> <button className={animate ? "animated-button btn btn-primary" : ''} 
+                        onClick={handleClick} >Open Project</button></center></Link>
+
                     </div>
                 </div>
                 <div className="card" >
@@ -53,7 +56,8 @@ const Projects = () => {
                     <div className="card-body">
                         <h5 className="card-title">Personal_Portfolio</h5>
                         <p className="card-text">This is personal portfolio page where i put my acdemics and all about me </p>
-                        <center><a href="Add link here" className="btn btn-primary">Open Project</a></center>
+                        <Link to="Add link here"><center> <button className={animate ? "animated-button btn btn-primary" : ''} 
+                        onClick={handleClick} >Open Project </button></center></Link>
                     </div>
                 </div>
 

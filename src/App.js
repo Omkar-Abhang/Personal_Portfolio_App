@@ -9,10 +9,13 @@ import Contactme from './components/Contactme';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Cover from './components/Cover';
+import Certification from './components/Certification';
 
 
 const App = () => {
+    const pdffile='src\Certificate\HTML,css, javascript.pdf'
     return (
+        
         <div className='p-1'>
             <BrowserRouter>
                 <div>
@@ -20,6 +23,7 @@ const App = () => {
                     <Cover />
                     <Aboutme />
                     <Education />
+                    <Certification filepath={pdffile}/>
                     <Skills />
                     <Projects />
                     <Contactme />
