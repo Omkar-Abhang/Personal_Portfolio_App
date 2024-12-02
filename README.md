@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 ## deployed this app on netlify platform 
-(https://genuine-kangaroo-9a7228.netlify.app).
+(https://omkarabhangportfolio.netlify.app).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
