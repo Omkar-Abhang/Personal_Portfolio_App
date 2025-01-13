@@ -16,20 +16,24 @@ Node.js installed on your machine
 # Installation
 
 **Clone the repository:**
-
+```
 git clone https://github.com/Omkar-Abhang/Personal_Portfolio_App
-
+```
 **Navigate to the project directory:**
-
+```
 cd Personal_Portfolio_App
-
+```
 **Install dependencies:**
-
+```
 npm install
-
+```
 **Start the application:**
-
+```
 npm start
-Available Scripts
+```
+**Available Scripts**
+
+```
 npm start - Runs the app in development mode
 npm run build - Builds the app for production
+```
